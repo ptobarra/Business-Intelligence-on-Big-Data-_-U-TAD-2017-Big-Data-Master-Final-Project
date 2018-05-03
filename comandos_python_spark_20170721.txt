@@ -1,0 +1,77 @@
+comandos_python_spark_20170721
+
+#estos comandos se deben arrancar desde el directorio de spark
+
+PYSPARK_DRIVER_PYTHON=ipython ./bin/spark
+
+# LOS COMANDOS Q TIENES Q USAR PARA ARRANCAR EL JUPYTER CON SPARK
+1o abrir un terminal y ejecutar
+./bin/pysark
+2o con pyspark corriendo abrir otro terminal (añadir pestaña) y ejecutar
+PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=notebook ./bin/pyspark
+
+//PARA ARRANCAR EL DROPBOX: (sobre todo la 2a instruccion)
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+
+//si tienes problemas para ejecutarlo quiza prueba 1o a ejecutar solo pyspark o ejecutar solo jupyter y luego todo junto
+
+/home/utad/spark-2.2.0-bin-hadoop2.7/pruebaRDD
+
+distFile=sc.textFile("README.md")
+countsSortByKey.saveAsTextFile("/home/utad/spark-2.2.0-bin-hadoop2.7/countsSortByKey")
+
+/home/utad/spark-2.2.0-bin-hadoop2.7/proyectoFinUtad_20170722/countsSortByKey
+
+#interfaz grafica de spark
+http://localhost:4040/jobs/
+
+20170813 para cargar y guardar ficheros lo mejor es el formato parquet de la sql guide aptdo generic load/save functions --> y puedes guardar y cargar directorios enteros
+
+//// //// //// //// APUNTES DE TRABAJO CON JUPYTER
+
+IMP!!!!!! el ypnb ejecutarlo a partir de '#ya sabes leer un csv como dataframe separado por columnas'
+
+#luego mira si puedes hacer un substring de la estacion meteorologica para quedarte con las dos 1as letras
+
+#luego mira como puedes repoblar dataframe columnas c3 a c7 con los 9999s o el valor que toque segun la magnitud
+#que toque --> quiza lo mejor popular columnas todas con 9999 y luego donde toque sustituir donde haya valor
+
+#ya contactar a jconca para ayuda para levantar hdfs y hive en ubuntu o levantar pyspark en cloudera y continuar alli el #proyecto
+#cuando tengas la tfm acabada pregunta jconca si tb tendras q cambiar los tipos de las columnas
+
+//// //// //// ////
+hacerte una lista de imports para q no te den mas por culo:
+<<<< 
+from pyspark.sql import SparkSession
+from pyspark.sql import Row
+from pyspark.sql.types import *
+ 
+from pyspark.sql.expressions import MutableAggregationBuffer
+from pyspark.sql.expressions import UserDefinedAggregateFunction
+from pyspark.sql import types._
+ 
+from pyspark.sql import *
+ 
+import org.apache.spark.sql.expressions.MutableAggregationBuffer
+import org.apache.spark.sql.expressions.UserDefinedAggregateFunction
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.Row
+import org.apache.spark.sql.SparkSession
+>>>> 
+
+//// //// //// ////
+grabando RDDs y DFs como csv
+<<<<
+19
+year2016csv_filtered_RDD.saveAsTextFile("/home/utad/spark-2.2.0-bin-hadoop2.7/con01/year2016csv_filtered_RDD")
+
+46
+year2016csv_filtered_RDD.saveAsTextFile("/home/utad/spark-2.2.0-bin-hadoop2.7/con01/year2016csv_filtered_RDD")
+
+97
+year2016csv_filtered_RDD.saveAsTextFile("/home/utad/spark-2.2.0-bin-hadoop2.7/con01/year2016csv_filtered_RDD")
+
+7
+year2016csvFinalDF.write.csv('/home/utad/spark-2.2.0-bin-hadoop2.7/con01/year2016csvFinalDF.csv')
+>>>>
