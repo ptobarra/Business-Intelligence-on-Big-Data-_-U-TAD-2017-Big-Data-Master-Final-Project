@@ -1,6 +1,6 @@
-# Business-Intelligence-on-Big-Data-_-U-TAD-2017-Big-Data-Expert-Program-Final-Project
+# Business-Intelligence-on-Big-Data-_-U-TAD-2017-Big-Data-Master-Final-Project
 
-Business Intelligence on Big Data _ U-TAD 2017 Big Data Expert Program Final Project.
+Business Intelligence on Big Data _ U-TAD 2017 Big Data Master Final Project.
 
 This is the final project I had to do obtain my diploma in my Big Data Expert Program in U-TAD that I finished in September 2017. 
 It uses the following technologies: Apache Spark v2.2.0, Python v2.7.3, Jupyter Notebook (PySpark), HDFS, Hive, Cloudera Impala, 
