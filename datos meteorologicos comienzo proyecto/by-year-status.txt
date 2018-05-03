@@ -1,0 +1,18 @@
+STATUS OF BY_YEAR FILES
+
+October 21, 2015
+
+Updates to the superghcnd_diff, superghcnd_full and by year files have 
+resumed.
+
+October 15, 2015
+
+A server failure on October 12, 2015 has prevented the creation of the
+superghcnd_diff and superghcnd_full files (as well as the yearly files provided
+in the by_year directory).  The creation of these files will resume as soon as
+possible.  The daily updates of GHCN-Daily are not affected by the server
+failure.  
+
+August 08, 2011
+
+ghcnd_diff pushed into production. yearly files are stable
