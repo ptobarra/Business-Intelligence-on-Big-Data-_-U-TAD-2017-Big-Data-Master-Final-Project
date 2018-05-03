@@ -41,7 +41,7 @@ IMP!!!!!! el ypnb ejecutarlo a partir de '#ya sabes leer un csv como dataframe s
 #cuando tengas la tfm acabada pregunta jconca si tb tendras q cambiar los tipos de las columnas
 
 //// //// //// ////
-hacerte una lista de imports para q no te den mas por culo:
+hacerte una lista de imports para q no te molesten mas:
 <<<< 
 from pyspark.sql import SparkSession
 from pyspark.sql import Row
